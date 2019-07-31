@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Particle Art</title>
+</head>
+
+<body>
+  <!-- <canvas id="canvas-three"></canvas> -->
+  <!-- <canvas id="canvas-second"></canvas> -->
+  <div class="loadingPage">
+    <div class="text-wrap">
+    <div class="text">CANVAS PARTICLE</div>
+  </div>
+  </div>
+
+  <canvas id="canvas-main"></canvas>
+</body>
+
+</html>
+
+
+
+<style>
+  html,body{
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  }
+  canvas {
+    max-width: 100%;
+  }
+  .loadingPage {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    transition: .5s
+  }
+  .loadingPage.is-none {
+    display: none;
+  }
+  .text {
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    letter-spacing: 3px;
+    transform: translate(-50%,-50%);
+    /* background: -webkit-linear-gradient(left,#fd0b58 0%,#fa8227 20%,#fede43 40%,#2ec938 60%,#375de8 80%,#a32b68 100%);
+    opacity: 0.6;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+  }
+  .dg {
+    animation: show 1s 7s both
+  }
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.3/dat.gui.min.js"></script>
+<!-- dat.gui CDN -->
+<script src="Js/charming.min.js"></script>
+<script src="Js/TweenMax.min.js"></script>
+<script src="Js/Particle.js"></script>
+
+
